@@ -14,7 +14,7 @@ Intended use of the 2 Notebooks:<br>
 <ol>
   <li>Try to run the complete notebook (1), as it is.</li>
   <li>Then re-run notebook, that is (2), but now with more texts added, and see what<br>
-  happens as information from these new texts books are queried.</li>
+  happens as information from these new texts are queried.</li>
 </ol>
 <a href="Transformers_train_your_own_language_model_01.ipynb">Notebook 1</a><br>
 <br>

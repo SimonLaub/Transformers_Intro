@@ -20,5 +20,8 @@ Intended use of the 2 Notebooks:<br>
 <br>
 <a href="Transformers_train_your_own_language_model_02.ipynb">Notebook 2</a><br>
 <br>
+<br>
+<br>In Notebook 2 you must add your texts to the training.<br>
+<br>In Notebook it demonstrated when you train for 5 epochs with the text <a href="Proshop.txt">Proshop.txt</a><br> 
 February 26, 2024<br>
 sila<br>

@@ -1,0 +1,91 @@
+Proshop is an online shop that sells business and consumer electronics, multimedia products, games and gaming products, home furnishings and household items.
+Organization
+
+Poul Thyregod is co-founder, major shareholder and CEO. The company Proshop a/s is wholly owned by Proshop Holding a/s, with 50% owned by Poul Thyregod through Thyregod Invest ApS, while the rest is owned by the Norwegian company Awilhelmsen Capital AS, based in Lysaker and Oslo respectively.[1]
+
+The headquarters is at Slet Møllevej 17 in Højbjerg near Aarhus. A Copenhagen branch is on Bådehavnsgade in Copenhagen's southwest quarter.[1]
+History
+
+Proshop a/s started as a retail store within multimedia products and other IT-related things. The company was founded by Poul Thyregod, Lars Spang Kjeldsen, Henrik Spang Kjeldsen and Mads Landrok in 1995. In 1999, Poul Thyregod bought out the other partners and became the sole owner of Proshop. In 1996, Proshop was one of the first to go online with an e-commerce store. In 2005, the physical store closed, and since then Proshop has been a 100% online shop.[source missing]
+Countries and Pick-up Points
+
+Proshop a/s sells products in eight countries: Denmark, Norway, Sweden, Finland, Austria, Poland, the Netherlands and Germany.
+
+Proshop has two Pick-Up Points in each Aarhus and Copenhagen, where it is possible to pick up orders made via the website.
+
+
+In this exercise you are asked to make a computer simulation of a warehouse, where robots transport packages. 
+In an accurate, real-life simulation there will be MANY details. 
+Too many. So, here you will be presented a case, and then you must simplify the case to something you can actually program in Python. 
+You are free to ask ChatGPT for help, as much as you like. Indeed, that is probably the only way you can come up with a solution in a reasonable time. 
+-	First you must program a solution where 1 robot pick up the package. Find an average time for that.
+-	Next you can use more robots, and see if you can make a quicker solution that way.
+
+Learning objectives: 
+-	Break down a complicated scenario into something you can actually program. Talk this though in the group. You might need to write down pseudo code for this in a word document, before you begin to code. ChatGPT can probably also help you with that.
+-	Next you must code your solution in Python. Again, ChatGPT can help you. 
+
+Notice: When you have worked with this today – you have learned about taking open ended problems, and turning them into actual algorithms. And you have gained additional Python coding experience.  So, even if you don’t get to a finished running simulation, you have still gained from working on this assignment. 
+Robot warehouse.
+A)	Make a Python code simulation of a robot working in a warehouse. Get help from ChatGPT.
+B)	Determine the optimal number of robots working in the robot warehouse.  How much faster is a solution with more robots working together?
+
+1.	Inspiration from a real-world scenario. Background. 
+This exercise is inspired by Proshops robot warehouse. 
+
+ 
+
+A solution based on roaming robot shuttles.  Where the roaming shuttle’s transport products in a high-density storage/retrieval environment. 
+The main advantage of this solution is that it allows the user to scale storage and throughput in a relatively independent fashion. That is, when more storage is needed, storage can be added with little to no additional investment required to facilitate the throughput (which may not have changed).
+To achieve higher storage density, deep lanes or tall columns of totes are used. These strategies, however, require additional access time, which may limit throughput. Some suppliers have addressed this challenge with algorithms that “learn” and slot fast-moving robots to the locations that are more readily accessible for reduced access and transport time. 
+These systems are built around a standard set of tote sizes. The tote size ultimately limits which products can be handled as compared with mobile rack solutions,
+1.1.	Grid of aluminum rails.
+At Proshop, their AutoStore system is built around a Grid of aluminum rails, vertical stacks of Bins beneath them, and one of three models of Robots, which travel along the rails to sort and retrieve requested items for packing, storage, or inventorying.
+To be precise: The AutoStore system consists of a Grid capable of storing and processing thousands of Bins using multiple intelligent, battery-powered R5, R5+, or B1 Robots to retrieve inventory Bins from the Grid. From the Grid, Bins are passed onto a conveyor system for delivery to any of several workstations or Ports for order fulfillment, picking, replenishment, inventory control, and other purposes.
+The Robots are independently controlled, supporting a system with no single point of failure and an uptime of 99.7%. Any Robot can collect any bin and deliver it to any workstation. This efficiency means you have access to 100% of your stock when you need it.
+ 
+The robots are tireless workers. R5 and R5+ stand ready, working to increase order accuracy and decrease time for order fulfillment and shipping. It is your go-to for a faster, more accurate service for longer customer relationships.
+
+ 
+See more here: 
+https://www.autostoresystem.com/system/robots/robot-r5 (accessed 2023)
+https://www.autostoresystem.com/cases/enhancing-e-commerce-efficiency-with-autostore (accessed 2023)
+
+2.	A simplified problem.
+In this exercise we will look at a (very) simplified version of the problem, where you are asked to come up with Python code, that can simulate the robot warehouse. 
+
+            
+Lets say we have a grid of size 50 x 50. 
+            
+Lets call the lower left corner for (0,0). 
+A robot can now run around on this grid – when it does this, we can call it a “runner”. Or it can stop on a grid cell, and collect an item below. When it does that we can call it a “digger”. 
+Items are placed in bins, boxes that can be stacked on top of each other. If we start from the ground, there can potentially be 16 layers of boxes on top of each other (We are inspired by the real-life Proshop solution here). 
+So, a robot can position itself at the right grid cell position and then “digg” down below and find a bin/box. Given that it is at the top of the pile. If not, then it must move the boxes on top of it to some other position. Before it can grap the right box. 
+And then move it to the package facility – lets say we have the package facility at at (0,0). 
+
+2.1.	Algorithm. 
+Now you are going to make an algorithm for the robots in the warehouse. If something is not entirely clear to you - Then you can just interpret the case in a way that makes sense to you. Or in a way that simplifies the problem, so that it becomes more tractable. 
+2.2.	Initialize the warehouse.
+Lets randomly initialize the warehouse. You can use a grid of 50x50 (or some other size, you like). Of depth 16 (Or some other depth, that you prefer to work with). 
+In this 3d grid each level has 2500 grid positions, and you can put boxes on top of each other, when needed (you can stack 16 boxes on top of each other). 
+                            
+
+We could in principle put 16x2500 = 40000 boxes inside the warehouse. Put lets say we only have 10.000 boxes (lets call them 1,2,3, ..10.000). Then write Python code that distribute the boxes randomly (starting from the ground floor) in the warehouse. 
+2.3.	A robot pick up a box.
+A robot is now told to pick up a box (Pick up a random box, lets call that Y. A number between 1 and 10000). It must then move to the right grid cell position, remove boxes on top of the box we are looking for, and put them somewhere else. Another position on the grid). Go back to the right grid position – repeat – until the right box is on top.  Digg for that, and then run with it back to the package facility (at 0,0). 
+For simplicity – lets say that a step on the grid takes 1 time unit, and that digging for a box, or lowering a box takes a time unit per floor. So, if the robot has to go all the way to the bottom, and back, it will take 16 x 2 = 32 time steps. 
+Make code for an algorithm for a robot that finds a box and delivers it to the package facility at (0,0). 
+What is the average time for a robot that does that?
+2.4.	Robot swarms.
+Next. Change the code so that more than one robot can (try to) locate the box, and bring it to the package site at (0,0). Can you make this work without running into other robots?
+Is it faster? How much faster on average?
+
+ 
+
+Discuss in the group how you will approach this exercise. 
+What will be a success for you – given the time you have available today.  What will you learn the most from?
+
+At the end of today, or next time, the groups will present how far they have come with this exercise. 
+If you have come up with a solution that you are really proud of you might want to publish it on Github. Showcasing problems that you have worked on. 
+
+                                                         

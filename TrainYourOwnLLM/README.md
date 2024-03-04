@@ -7,7 +7,7 @@ See the original notebook here:<br>
 https://colab.research.google.com/drive/1ya-NLUyfbs0lZJu1pQIkhoA4POtTsVkv?usp=sharing<br>
 <br>
 Changes to the original notebook was made, according to<br>
-to talks with Joao, after Mads and I visited<br>
+to talks with Joao. After Mads and I visited<br>
 Rotterdam Universiteit in January 2024.<br>
 <br>
 Intended use of the 2 Notebooks:<br>

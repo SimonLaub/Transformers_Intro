@@ -12,5 +12,7 @@ Rotterdam Univerity in January 2024.<br>
 
 <a href="Transformers_train_your_own_language_model_01.ipynb">Notebook 1</a><br>
 <br>
+<a href="Transformers_train_your_own_language_model_02.ipynb">Notebook 2</a><br>
+<br>
 February 26, 2024<br>
 sila<br>

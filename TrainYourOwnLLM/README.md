@@ -10,5 +10,7 @@ Changes to the original notebook was made, according to<br>
 to talks with Joao, after Mads and I visited<br>
 Rotterdam Univerity in January 2024.<br>
 
+<a href="Transformers_train_your_own_language_model_01.ipynb">Notebook 1</a><br>
+<br>
 February 26, 2024<br>
 sila<br>

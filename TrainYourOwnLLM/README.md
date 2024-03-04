@@ -8,8 +8,15 @@ https://colab.research.google.com/drive/1ya-NLUyfbs0lZJu1pQIkhoA4POtTsVkv?usp=sh
 <br>
 Changes to the original notebook was made, according to<br>
 to talks with Joao, after Mads and I visited<br>
-Rotterdam Univerity in January 2024.<br>
-
+Rotterdam Univeriteit in January 2024.<br>
+<br>
+Intended use of the 2 Notebooks:<br>
+<br>
+<li>
+  <0l>Try to run the complete notebook (1), as it is.</ol>
+  <0l>Then re-run notebook, that is (2), but now with more texts added, and see what<br>
+  happens as information from these new texts books are queried.</ol>
+</li>
 <a href="Transformers_train_your_own_language_model_01.ipynb">Notebook 1</a><br>
 <br>
 <a href="Transformers_train_your_own_language_model_02.ipynb">Notebook 2</a><br>

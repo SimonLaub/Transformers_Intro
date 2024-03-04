@@ -11,7 +11,6 @@ to talks with Joao, after Mads and I visited<br>
 Rotterdam Univeriteit in January 2024.<br>
 <br>
 Intended use of the 2 Notebooks:<br>
-<br>
 <ol>
   <li>Try to run the complete notebook (1), as it is.</li>
   <li>Then re-run notebook, that is (2), but now with more texts added, and see what<br>

@@ -5,6 +5,6 @@ Example shows how to get sql code from<br>
 the transformer (based on userinput).<br>
 Details in the code. <br>
 <br>
-For model: t5-small-awesome-text-to-sql
+For model: <br>t5-small-awesome-text-to-sql
 See: <a href="AccessDbFromLangchain.ipynb">Notebook to access Chinook DB</a>
 

@@ -1,5 +1,5 @@
 To Run: Rename your Chinook_Sqlite.sqllite database to Chinook.db<br>
-(Which makes it available for the Notebook).<br>
+(Which makes it available for the Notebooks).<br>
 <br>
 Examples show how to get sql code (and db access) from<br> 
 a transformer (based on userinput).<br>

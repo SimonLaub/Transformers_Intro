@@ -8,6 +8,6 @@ Details in the code. <br>
 For model: <br>t5-small-awesome-text-to-sql<br>
 See: <a href="AccessDbFromLangchain.ipynb">Notebook to access Chinook DB</a><br>
 <br>
-For mixtral-8x7b-32768 model:<br>
+For the mixtral-8x7b-32768 model:<br>
 See: <a href="GroqChatLlm.ipynb">Using Groc to access Chinook DB</a><br>
 

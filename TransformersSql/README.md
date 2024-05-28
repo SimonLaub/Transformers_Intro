@@ -6,5 +6,7 @@ the transformer (based on userinput).<br>
 Details in the code. <br>
 <br>
 For model: <br>t5-small-awesome-text-to-sql<br>
-See: <a href="AccessDbFromLangchain.ipynb">Notebook to access Chinook DB</a>
+See: <a href="AccessDbFromLangchain.ipynb">Notebook to access Chinook DB</a><br>
+For model:<br>
+See: <a href="GroqChatLlm.ipynb">Using Groc to access Chinook DB</a><br>
 

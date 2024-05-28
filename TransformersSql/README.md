@@ -1,8 +1,8 @@
-Rename your Chinook_Sqlite.sqllite database to Chinook.db<br>
+To Run: Rename your Chinook_Sqlite.sqllite database to Chinook.db<br>
 (Which makes it available for the Notebook).<br>
 <br>
-Example shows how to get sql code from<br> 
-the transformer (based on userinput).<br>
+Examples show how to get sql code (and db access) from<br> 
+a transformer (based on userinput).<br>
 Details in the code. <br>
 <br>
 For model: <br>t5-small-awesome-text-to-sql<br>

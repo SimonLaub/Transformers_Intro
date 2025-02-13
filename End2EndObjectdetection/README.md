@@ -11,3 +11,6 @@ February, 2025. The Oval Office.<br>
 February, 2025. The Oval Office.<br>
 <img src="OvalOffice2.jpg" alt="Oval Office scene. February 2025."><br>
 <br>
+February, 2025. The Oval Office.<br>
+<img src="OvalOffice3.jpg" alt="Oval Office scene. February 2025."><br>
+<br>

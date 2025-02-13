@@ -1,5 +1,5 @@
 Using the DEtection TRansformer (DETR) model to 
-identy objects in pictures. <br>
+identify objects in pictures. <br>
 Code <a href="EndToEndObjectDetection.py">here</a>.<br>
 <br>
 Beijing Street life:<br>

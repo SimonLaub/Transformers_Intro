@@ -1,3 +1,6 @@
+# Simple object detection program.
+# Sila. February 12th, 2025
+
 from transformers import DetrImageProcessor, DetrForObjectDetection
 import torch
 from PIL import Image

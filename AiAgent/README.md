@@ -1,1 +1,1 @@
-A simple agent.
+A simple AI agent.
